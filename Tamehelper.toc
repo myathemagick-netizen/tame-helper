@@ -1,7 +1,7 @@
 ## Interface: 120001
 ## Title: Tame Helper
 ## Author: Myathe
-## Notes: Addon for Hunters to check which pet families they can tame.
+## Notes: Addon for Hunters to check which pet families they can tame..
 ## DefaultState: enabled
 ## Version: 1.1.0
 ## IconTexture: Interface\Icons\Ability_Hunter_BeastTaming
