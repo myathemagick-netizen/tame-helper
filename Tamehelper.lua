@@ -1,5 +1,5 @@
 -- TameHelper addon
--- Updated for WoW: Midnight  (12.0.x)
+-- Updated for WoW: Midnight (12.0.x)
 
 local TameHelper = CreateFrame("Frame", "TameHelperFrame")
 
@@ -113,38 +113,4 @@ TameHelper:RegisterEvent("PLAYER_LOGIN")
 SLASH_TAMEHELPER1 = "/tamehelp"
 SlashCmdList["TAMEHELPER"] = function()
     TameHelper:DisplayAvailablePets()
-endfunction TameHelper:DisplayAvailablePets()
-  self:Print("You can tame the following types of pets:")
-  for _, t in ipairs(tomes) do
-    local ok = (t.questID ~= 0) and self:HasCompletedTomeQuest(t.questID)
-               or self:HasLearnedTome(t.spellID)
-    self:Print(("- %s: %s"):format(t.name, colorYesNo(ok)))
-  end
-
-  -- Class/spec context
-  local _, classToken = UnitClass("player")
-  if classToken ~= "HUNTER" then
-    self:Print("\nYou are not a hunter.")
-    return
-  end
-
-  local spec = GetSpecialization()
-  if spec == 1 then
-    local exotic = {"Chimaeras","Clefthooves","Core Hounds","Devilsaurs","Quilen","Shale Spiders","Silithids","Spirit Beasts","Water Striders"}
-    self:Print("\nExotic pets you can tame as Beast Mastery:")
-    for _, f in ipairs(exotic) do self:Print("- " .. f) end
-  else
-    self:Print("\nYou are not in Beast Mastery spec.")
-  end
 end
-
-TameHelper:SetScript("OnEvent", function(self, event)
-  if event == "PLAYER_LOGIN" then
-    self:Print("Loaded. Type /tamehelp to check your unlocks.")
-  end
-end)
-
-TameHelper:RegisterEvent("PLAYER_LOGIN")
-
-SLASH_TAMEHELPER1 = "/tamehelp"
-SlashCmdList.TAMEHELPER = function() TameHelper:DisplayAvailablePets() end
