@@ -1,5 +1,5 @@
 -- TameHelper addon
--- Updated for WoW: Midnight (12.0.x)
+-- Updated for WoW: Midnight  (12.0.x)
 
 local TameHelper = CreateFrame("Frame", "TameHelperFrame")
 
