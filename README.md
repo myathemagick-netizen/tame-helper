@@ -1,4 +1,4 @@
-# Tame Helper (Midnight 12.0.1)
+# Tame Helper (Midnight 12.0.5)
 
 A simple Hunter addon that reports which pet families you can tame based on tome/quest unlocks.
 
@@ -9,5 +9,5 @@ A simple Hunter addon that reports which pet families you can tame based on tome
 3. In game, type `/tamehelp`.
 
 ## Notes
-- Interface: 110200
-- Works on The War Within (11.2.0).
+- Interface: 120005
+- Works on Midnight (12.0.5).
