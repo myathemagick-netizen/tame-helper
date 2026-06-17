@@ -1,4 +1,4 @@
-## Interface: 120005
+## Interface: 120007
 ## Title: TameHelper
 ## Notes: Shows which special hunter pet families you can currently tame.
 ## DefaultState: enabled
