@@ -1,4 +1,4 @@
-# Tame Helper (Midnight 12.0.5)
+# Tame Helper (Midnight 12.0.7)
 
 A simple Hunter addon that reports which pet families you can tame based on tome/quest unlocks.
 
