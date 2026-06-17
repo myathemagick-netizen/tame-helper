@@ -9,5 +9,5 @@ A simple Hunter addon that reports which pet families you can tame based on tome
 3. In game, type `/tamehelp`.
 
 ## Notes
-- Interface: 120005
+- Interface: 120007
 - Works on Midnight (12.0.5).
