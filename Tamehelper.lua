@@ -1,5 +1,5 @@
 -- TameHelper addon
--- Updated for WoW: Midnight (12.0.x)
+-- Updated for WoW: Midnight (12.1.5)
 
 local TameHelper = CreateFrame("Frame", "TameHelperFrame")
 
@@ -208,16 +208,19 @@ function TameHelper:DisplayAvailablePets()
 
     if isBM then
         local exotic = {
+            "Aqiri",
+            "Carapids",
             "Chimaeras",
             "Clefthooves",
             "Core Hounds",
             "Devilsaurs",
-            "Quilen",
-            "Shale Spiders",
-            "Silithids",
+            "Pterrordaxes",
+            "Shale Beasts",
             "Spirit Beasts",
+            "Stone Hounds",
             "Water Striders",
-            "Whip Tails",   -- Added in Midnight
+            "Whiptails",   -- Added in Midnight
+            "Worms",
         }
         self:Print("\nExotic families (Beast Mastery only):")
         for _, f in ipairs(exotic) do
